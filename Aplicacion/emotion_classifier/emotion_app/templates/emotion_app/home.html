@@ -1,0 +1,14 @@
+{% extends 'emotion_app/base.html' %}
+{% load static %}
+
+{% block title %}Página Principal{% endblock %}
+
+{% block content %}
+<div class="center-content">
+    <img src="{% static 'emotion_app/icon.png' %}" alt="Icono" class="main-icon">
+    <div class="buttons">
+        <a href="{% url 'process' %}"><button>Procesar Imágenes</button></a>
+        <a href="{% url 'thanks_page' %}"><button>Salir</button></a>
+    </div>
+</div>
+{% endblock %}

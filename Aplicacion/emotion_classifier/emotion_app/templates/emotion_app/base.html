@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Emotion Classifier{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'emotion_app/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Emotion Classifier</h1>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>© 2025 - Emotion Classifier</p>
+    </footer>
+</body>
+</html>
